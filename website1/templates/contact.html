@@ -1,30 +1,28 @@
 <!-- your html code here -->
-<div style="margin-bottom: 100px;">
+<div class="container">
+    <h1>Contact</h1>
+    <p>Por favor envíenos su correo y su mensaje. Pronto lo contactaremos!!</p>
     <div class="row">
-        <h1>Contact</h1>
-
-    </div>
-    <div class="row">
-
-        <p>Por favor envíenos sus datos</p>
-    </div>
-    <div class="col-8" style="background-color: gray;">
-        <form>
-            <div class="form-group row">
-                <div class="col-2">
-                    <label for="exampleInputEmail1">Your E-mail</label>
+        <div class="col-10 bg-secondary m-auto rounded">
+            <br>
+            <form>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Your E-mail</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Your email" />
+                    </div>
                 </div>
-                <div class="col-10">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Your email">
+                <div class="form-group row">
+                    <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">Your message</label>
+                    <div class="col-sm-10">                        
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Please enter your message here"></textarea>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Your message</label>
-                <input type="text" class="form-control" id="exampleInputPassword1"
-                    placeholder="Please enter your message here">
-            </div>
-            <button type="button" class="d-flex btn btn-primary ml-auto">Submit</button>
-        </form>
+
+                <button type="submit" class="btn btn-primary form-group float-right">Submit</button>
+            </form>
+        </div>
     </div>
 </div>
+
